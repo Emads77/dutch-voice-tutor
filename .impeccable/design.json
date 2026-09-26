@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-15T00:00:00Z",
+  "title": "Design System: Sawti (صوتي)",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "neutral", "displayName": "Ground", "canonical": "#2b1710", "tonalRamp": ["#0f0805", "#190d08", "#2b1710", "#432615", "#5f371f", "#7d4c2c", "#9c633c", "#ba7d51"] },
+      "ground-deep": { "role": "neutral", "displayName": "Ground Deep", "canonical": "#190d08", "tonalRamp": ["#060302", "#0f0805", "#190d08", "#2a1710", "#3e221a", "#552f24", "#6f3e2f", "#8b4f3c"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#f7ead9", "tonalRamp": ["#453b2c", "#665846", "#8a7a63", "#ae9d81", "#cbc0a4", "#e5dcc8", "#f7ead9", "#fdf7ef"] },
+      "cream-bubble": { "role": "neutral", "displayName": "Cream Bubble", "canonical": "#fff6ea", "tonalRamp": ["#453e2f", "#665c46", "#8b7f62", "#b0a481", "#d1c8a6", "#ede4cc", "#fff6ea", "#fffcf8"] },
+      "text-soft": { "role": "neutral", "displayName": "Text Soft", "canonical": "#c7a88d", "tonalRamp": ["#3a2c22", "#5c4636", "#7d604b", "#9d7d62", "#b8967a", "#c7a88d", "#dcc3ac", "#eeded0"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#2c1c12", "tonalRamp": ["#120b07", "#2c1c12", "#4a3020", "#6c4a33", "#916849", "#b98d68", "#dcb890", "#f2ddbf"] },
+      "ink-soft": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#6b5644", "tonalRamp": ["#241b15", "#3d2f24", "#5c4736", "#6b5644", "#9d7d62", "#c09e80", "#e2c1a1", "#f5ddc3"] },
+      "coral": { "role": "primary", "displayName": "Coral", "canonical": "#ff5a36", "tonalRamp": ["#3a0f04", "#5f1c0a", "#8a2c13", "#b8330f", "#e0491f", "#ff5a36", "#ff8c6c", "#ffbca8"] },
+      "coral-deep": { "role": "primary", "displayName": "Coral Deep", "canonical": "#b8330f", "tonalRamp": ["#280a02", "#4a1406", "#71200a", "#b8330f", "#d94f26", "#ee7448", "#f6a488", "#fbcdbc"] },
+      "coral-tint": { "role": "primary", "displayName": "Coral Tint", "canonical": "#ffb59c", "tonalRamp": ["#4a1c0e", "#6e2c17", "#a04525", "#c9673f", "#e28d68", "#f2ac8e", "#ffb59c", "#ffd9cb"] },
+      "emerald": { "role": "secondary", "displayName": "Emerald", "canonical": "#2fd98a", "tonalRamp": ["#052416", "#0b3b29", "#125a3e", "#1c7d56", "#22a06d", "#2fd98a", "#6de8b0", "#b8f2d9"] },
+      "emerald-deep": { "role": "secondary", "displayName": "Emerald Deep", "canonical": "#0b3b29", "tonalRamp": ["#02100a", "#0b3b29", "#155940", "#1f7959", "#2c9a74", "#45bb90", "#7fd6b2", "#c0ecda"] },
+      "emerald-tint": { "role": "secondary", "displayName": "Emerald Tint", "canonical": "#b8f2d9", "tonalRamp": ["#123f2e", "#1e5c44", "#2e7c5f", "#469d7e", "#6fbca2", "#9adcc0", "#b8f2d9", "#e0faf0"] },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "rgba(247, 234, 217, 0.14)", "tonalRamp": [] },
+      "line-on-light": { "role": "neutral", "displayName": "Line On Light", "canonical": "rgba(44, 28, 18, 0.12)", "tonalRamp": [] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The one-line Arabic headline promise, Paper on Ground. Never more than 3 lines at a 15ch measure." },
+      "body": { "displayName": "Body", "purpose": "Bubble captions and the sub-headline." },
+      "label": { "displayName": "Label", "purpose": "Nav links, CEFR caption, mic idle/recording label." },
+      "latin-accent": { "displayName": "Latin Accent", "purpose": "Dutch phrases embedded in the RTL flow, always isolated dir=\"ltr\" lang=\"nl\"." }
+    },
+    "shadows": [
+      { "name": "bubble-tutor", "value": "0 14px 28px -12px rgba(255, 90, 54, 0.4)", "purpose": "Coral glow under the incoming/tutor bubble." },
+      { "name": "bubble-learner", "value": "0 14px 28px -14px rgba(0, 0, 0, 0.5)", "purpose": "Neutral grounding shadow under the light cream learner bubble." },
+      { "name": "mic-cta-idle", "value": "0 22px 50px -16px rgba(255, 90, 54, 0.6), inset 0 3px 0 rgba(255, 255, 255, 0.2), inset 0 -7px 12px rgba(0, 0, 0, 0.2)", "purpose": "Coral glow plus glossy convex-button highlight/shadow pair on the idle mic CTA." },
+      { "name": "mic-cta-recording", "value": "0 22px 54px -14px rgba(47, 217, 138, 0.65), inset 0 3px 0 rgba(255, 255, 255, 0.16), inset 0 -7px 12px rgba(0, 0, 0, 0.24)", "purpose": "Same glossy construction, emerald-tinted, once recording starts." }
+    ],
+    "motion": [
+      { "name": "mic-pulse", "value": "mic-pulse 1.8s ease-out infinite, staggered 0.6s between the two halo rings", "purpose": "Outward halo pulse while the mic CTA is in the recording state." },
+      { "name": "mic-scale", "value": "mic-scale 0.85s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate", "purpose": "Live waveform bars (Ground-colored) inside the recording mic CTA." },
+      { "name": "bar-scale", "value": "bar-scale 0.75s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate", "purpose": "Simulated playback animation on a bubble's waveform when its play button is toggled." },
+      { "name": "dot-pulse", "value": "dot-pulse 1.6s ease-out infinite", "purpose": "Live-indicator dot on the current CEFR chip." },
+      { "name": "press-scale", "value": "transform 160ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Tactile hover/active scale on the mic CTA (1.035 hover, 0.96 active)." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "560px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Mic CTA (idle)",
+      "kind": "button",
+      "refersTo": "mic-cta",
+      "description": "The primary voice-entry action. A true circle, the single largest, most luminous object on the page.",
+      "html": "<button class=\"ds-mic-cta\" aria-label=\"اضغط وتحدث بالهولندية\"><svg viewBox=\"0 0 24 24\" width=\"30\" height=\"30\"><rect x=\"9\" y=\"2.5\" width=\"6\" height=\"12\" rx=\"3\" fill=\"currentColor\"/><path d=\"M6 11v1a6 6 0 0 0 12 0v-1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"8.5\" y1=\"22\" x2=\"15.5\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></button>",
+      "css": ".ds-mic-cta { width: clamp(132px, 18vw, 176px); height: clamp(132px, 18vw, 176px); border-radius: 50%; border: none; cursor: pointer; display: grid; place-items: center; background: #ff5a36; color: #2b1710; box-shadow: 0 22px 50px -16px rgba(255, 90, 54, 0.6), inset 0 3px 0 rgba(255, 255, 255, 0.2), inset 0 -7px 12px rgba(0, 0, 0, 0.2); transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mic-cta:hover { transform: scale(1.035); } .ds-mic-cta:active { transform: scale(0.96); } .ds-mic-cta:focus-visible { outline: 2.5px solid #2fd98a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Voice-Note Bubble (tutor)",
+      "kind": "custom",
+      "refersTo": "bubble-tutor",
+      "description": "Incoming Arabic prompt bubble, glowing coral-deep, on the dark ground.",
+      "html": "<div class=\"ds-bubble ds-bubble--tutor\"><button class=\"ds-bubble__play\" aria-label=\"الاستماع إلى المقطع\">▶</button><div class=\"ds-bubble__wave\"><span></span><span></span><span></span><span></span></div><span class=\"ds-bubble__duration\">0:05</span><span class=\"ds-bubble__tick\">✓</span><p class=\"ds-bubble__caption\">قل هذه الجملة: أين يقع مكتب البلدية؟</p></div>",
+      "css": ".ds-bubble--tutor { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; column-gap: 10px; row-gap: 8px; max-width: 82%; padding: 13px 17px; border-radius: 22px; border-end-end-radius: 6px; background: #b8330f; color: #f7ead9; box-shadow: 0 14px 28px -12px rgba(255, 90, 54, 0.4); } .ds-bubble__caption { grid-column: 1 / -1; font-size: 0.95rem; line-height: 1.55; }"
+    },
+    {
+      "name": "Voice-Note Bubble (learner)",
+      "kind": "custom",
+      "refersTo": "bubble-learner",
+      "description": "Outgoing Dutch-attempt bubble — the one light card on the dark ground; Dutch text is isolated dir=\"ltr\" lang=\"nl\".",
+      "html": "<div class=\"ds-bubble ds-bubble--learner\"><button class=\"ds-bubble__play\" aria-label=\"الاستماع إلى المقطع\">▶</button><div class=\"ds-bubble__wave\"><span></span><span></span><span></span><span></span></div><span class=\"ds-bubble__duration\">0:04</span><span class=\"ds-bubble__tick\">✓</span><p class=\"ds-bubble__caption\"><span dir=\"ltr\" lang=\"nl\">Waar is het gemeentehuis?</span></p></div>",
+      "css": ".ds-bubble--learner { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; column-gap: 10px; row-gap: 8px; max-width: 82%; padding: 13px 17px; border-radius: 22px; border-end-start-radius: 6px; background: #fff6ea; color: #2c1c12; border: 1px solid rgba(44, 28, 18, 0.12); box-shadow: 0 14px 28px -14px rgba(0, 0, 0, 0.5); }"
+    },
+    {
+      "name": "CEFR Chip (done / current / locked)",
+      "kind": "chip",
+      "refersTo": "cefr-chip-done",
+      "description": "Read-receipt-style CEFR level indicator; three states in one pill shape, on the dark ground.",
+      "html": "<ol class=\"ds-cefr-levels\"><li class=\"ds-cefr-chip ds-cefr-chip--done\">A0 <span>✓</span></li><li class=\"ds-cefr-chip ds-cefr-chip--current\">A1 <span class=\"ds-cefr-chip__pulse\"></span></li><li class=\"ds-cefr-chip ds-cefr-chip--locked\">A2</li></ol>",
+      "css": ".ds-cefr-levels { list-style: none; display: flex; gap: 10px; padding: 0; margin: 0; } .ds-cefr-chip { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 999px; border: 1.5px solid rgba(247, 234, 217, 0.14); font-size: 0.9rem; color: #f7ead9; } .ds-cefr-chip--done { background: #b8330f; border-color: #b8330f; color: #f7ead9; } .ds-cefr-chip--current { background: #f7ead9; border: 2px solid #2fd98a; color: #0b3b29; font-weight: 600; } .ds-cefr-chip--locked { background: transparent; color: #c7a88d; opacity: 0.72; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Text nav link on the dark ground with a fade-in coral underline on hover.",
+      "html": "<a class=\"ds-nav-link\" href=\"#how\">كيف يعمل</a>",
+      "css": ".ds-nav-link { color: #c7a88d; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding-block: 4px; border-bottom: 2px solid transparent; transition: color 160ms ease, border-color 160ms ease; } .ds-nav-link:hover { color: #ff5a36; border-color: #ffb59c; } .ds-nav-link:focus-visible { outline: 2.5px solid #2fd98a; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Voice Note, Glowing After Dark",
+    "overview": "Sawti's landing page refuses the two defaults its category ships by reflex: the gamified-mascot language app and the blue corporate-SaaS dashboard with a mic icon bolted onto a hero. Instead, the page IS a voice note — the exact object Arabic-speaking WhatsApp users already send fifty times a day — enlarged until it becomes the whole interface. Two real message bubbles (a tutor's Arabic prompt, a learner's Dutch reply) form a live conversation thread above the fold, leading the eye down to one oversized circular mic button that glows like a lit object against a dark, lamplit ground — the single largest, most saturated thing on the page. CEFR progress (A0→B1) reads as a row of read-receipt-style chips rather than a gamified progress bar — \"your voice notes so far,\" not points.\nThe scene this palette answers to: a learner practicing quietly in the evening, phone screen lighting a dim room after a full day of work or family duties — not a bright office SaaS demo. A deep, warm espresso-brown ground carries that scene, lit by one vivid coral accent glowing at page-center like the phone's own light. One color is held in total reserve: emerald appears nowhere except the live-recording state, so its appearance always means \"this is listening right now.\"",
+    "keyCharacteristics": [
+      "A dark, warm (\"lamplit,\" not corporate-black) ground makes the coral mic CTA read as a genuinely glowing object, not a flat colored circle.",
+      "Chat-bubble vocabulary (waveform, timestamp, read-receipt tick) carries the entire visual system, not just the demo thread.",
+      "RTL is structural, not mirrored decoration: Arabic chrome flows right-to-left natively; Dutch phrases are isolated LTR islands (dir=\"ltr\" lang=\"nl\") inside the RTL flow.",
+      "Emerald is a state color, not a palette color — it exists only while something is actively being recorded.",
+      "No kickers, no icon-tile feature grids, no gamification chrome (badges, streaks, confetti)."
+    ],
+    "rules": [
+      { "name": "The Emerald Reservation Rule", "body": "Emerald never appears at rest. Its only triggers are the live-recording state (.mic-cta.is-recording), the single CEFR level currently in progress, and the keyboard focus ring.", "section": "colors" },
+      { "name": "The Bright/Deep Split Rule", "body": "Coral (bright) is for icon-only surfaces, rendered in Ground. Coral Deep is for any surface holding body text, rendered in Paper. Never reverse the pairing — this split exists because the design already failed that exact contrast check once and had to be fixed.", "section": "colors" },
+      { "name": "The Two-Surface Text Rule", "body": "Only the learner bubble card uses dark-on-light text (Ink / Ink Soft). Everywhere else on the page is light-on-dark (Paper / Text Soft on Ground, or Paper on a saturated fill).", "section": "colors" },
+      { "name": "The Glow-Versus-Ground Rule", "body": "A saturated fill (coral, emerald) gets a hue-matched glow shadow. A light neutral card (the learner bubble) gets a neutral near-black grounding shadow instead.", "section": "elevation" },
+      { "name": "The Isolated Script Rule", "body": "Any Dutch (Latin-script) content inside the RTL page is wrapped in its own dir=\"ltr\" lang=\"nl\" span so bidi punctuation and word order never scramble.", "section": "typography" }
+    ],
+    "dos": [
+      "Do keep Emerald exclusive to the live-recording state, the single in-progress CEFR level, and the focus ring.",
+      "Do put icon-only content on bright Coral in Ground, and body text on Coral Deep in Paper — never the reverse.",
+      "Do default new text to light-on-dark (Paper/Text Soft on Ground) and reserve dark-on-light (Ink/Ink Soft) for content inside a light card like the learner bubble.",
+      "Do give a saturated fill a hue-matched glow shadow and a light neutral card a neutral grounding shadow.",
+      "Do wrap any Latin-script (Dutch) text embedded in the RTL flow in dir=\"ltr\" lang=\"nl\"."
+    ],
+    "donts": [
+      "Don't add a kicker/eyebrow label above the headline, a features-grid of icon+heading+text cards, or gamification chrome (streaks, badges, confetti, points).",
+      "Don't default to cream-background-plus-calligraphy for \"an Arabic app\" — that rendering was named and rejected during this build's direction round.",
+      "Don't treat this dark mode as cold or corporate — Ground is a warm espresso-brown meant to feel like a lit phone screen in a dim room.",
+      "Don't apply opacity-based dimming to text that needs to stay ≥4.5:1 — this caused a real contrast failure during the first, light-mode build; the Bright/Deep Split Rule exists so the dark palette doesn't repeat it.",
+      "Don't mirror the layout as if it were LTR-flipped; RTL here is native document flow, so first-DOM-child-at-the-right is correct, unforced behavior."
+    ]
+  }
+}

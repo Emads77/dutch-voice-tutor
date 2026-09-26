@@ -1,0 +1,138 @@
+:root {
+  --radius: 1rem;
+
+  /* ground: warm cream/blush background */
+  --background: #f7f1e8;
+  --foreground: #25162e;
+
+  /* dark plum surface (practice section, footer, "why" page) */
+  --plum: #312038;
+  --plum-soft: #3e2a46;
+
+  /* coral: the brand's vivid primary */
+  --coral: #ee735d;
+  --coral-deep: #db604b;
+  --coral-bright: #f27862;
+  --coral-text: #d05c49;
+  --ring: #f36f57;
+
+  /* text on the cream ground */
+  --ink: #25162e;
+  --ink-soft: #645769;
+  --ink-faint: #9a8997;
+
+  /* text on the plum ground */
+  --paper: #fff7ef;
+  --paper-soft: #d8c3d5;
+
+  --line: rgba(37, 22, 46, 0.11);
+
+  --font-display: 'Fraunces', Georgia, 'Noto Naskh Arabic', serif;
+  --font-body: 'DM Sans', 'Noto Sans Arabic', Arial, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  color-scheme: light;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  min-height: 100svh;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::selection {
+  background: var(--coral);
+  color: var(--paper);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--coral-deep);
+  border-radius: 8px;
+  border: 3px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coral);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "fraunces",
+        "files": [
+          "web/index.html"
+        ],
+        "createdAt": "2026-09-15T21:53:17.088Z",
+        "reason": "user-approved full redesign replacing old DESIGN.md system; ported from new comp"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "dm sans",
+        "files": [
+          "web/index.html"
+        ],
+        "createdAt": "2026-09-15T21:53:17.350Z",
+        "reason": "user-approved full redesign replacing old DESIGN.md system; ported from new comp"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "dm mono",
+        "files": [
+          "web/index.html"
+        ],
+        "createdAt": "2026-09-15T21:53:17.625Z",
+        "reason": "user-approved full redesign replacing old DESIGN.md system; ported from new comp"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "noto sans arabic",
+        "files": [
+          "web/index.html"
+        ],
+        "createdAt": "2026-09-15T21:53:17.922Z",
+        "reason": "user-approved full redesign replacing old DESIGN.md system; ported from new comp"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "noto naskh arabic",
+        "files": [
+          "web/index.html"
+        ],
+        "createdAt": "2026-09-15T21:53:18.236Z",
+        "reason": "user-approved full redesign replacing old DESIGN.md system; ported from new comp"
+      }
+    ]
+  }
+}

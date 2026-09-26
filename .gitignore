@@ -11,3 +11,6 @@ npm-debug.log*
 # VSCode
 .vscode/*
 !.vscode/extensions.json
+
+# Impeccable QA screenshots (transient review evidence, not deliverables)
+.impeccable/review/
